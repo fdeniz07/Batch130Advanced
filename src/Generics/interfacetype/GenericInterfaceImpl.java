@@ -1,7 +1,7 @@
 package Generics.interfacetype;
 
 //Eger bir class generic interface'i implement ederse, bu class'in da generic yapida olmasi gerekir.
-public class GenericInterfaceImpl<T> implements GenericInterface {
+public class GenericInterfaceImpl<T> implements GenericInterface<T> {
 
     @Override
     public void printValue(Object type) {
@@ -9,7 +9,7 @@ public class GenericInterfaceImpl<T> implements GenericInterface {
     }
 
     @Override
-    public Object getValue() {
+    public T getValue() {
         return null;
     }
 }
