@@ -1,4 +1,4 @@
-package Generics.methods;
+package generics.methods;
 
 import java.util.Arrays;
 

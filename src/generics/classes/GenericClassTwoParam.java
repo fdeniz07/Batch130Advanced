@@ -1,4 +1,4 @@
-package Generics.classes;
+package generics.classes;
 
 //(Bırden fazla)Iki tane data tipini parametre olarak kullanmak icin
 public class GenericClassTwoParam<S,U> {

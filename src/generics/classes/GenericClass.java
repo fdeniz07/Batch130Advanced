@@ -1,4 +1,4 @@
-package Generics.classes;
+package generics.classes;
 
 //public class class_name<T>
 public class GenericClass<T> {

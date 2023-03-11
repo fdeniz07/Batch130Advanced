@@ -1,4 +1,4 @@
-package Bounding;
+package bounding;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,12 +42,30 @@ public class GenericLowerBoundWildcard {
         list.stream().map(t -> 2 * t.doubleValue()).forEach(System.out::println);
     }
 
-    //wildcard kısıtlaması
+    //wildcard kısıtlaması:wildcard okunabilirliği artırır ancak bazı kıstlamaları var
     public static void printElements(List<?> listOfUnknown) {
+
+        //listOfUnknown.add("Java"); --> tür bilinmedigi icin izin vermiyor.
+        //add metodu gibi islemlere izin vermez.
+        //Okumaya izin verir, Salt okunur degil ana böyle düsünülebilir.
+        //Türden bagimsiz islemlere izin veriyor. size,clear,remove...
+
+        //listOfUnknown.size(); // tür bagimsiz islem
+
+        //listOfUnknown.add(null);//-->null: data tipi yok
 
         for (Object object : listOfUnknown) {
             System.out.println(object);
         }
-
     }
+
+    //List<?> VS List<Object>
+    public static void printElementsObject(List<Object> listOfUnknown){
+        listOfUnknown.add("Java");
+        for (Object object:listOfUnknown){
+            System.out.println(object);
+        }
+    }
+
+    // T ile ?(wildcard) tamamen ayni manada degildir.
 }

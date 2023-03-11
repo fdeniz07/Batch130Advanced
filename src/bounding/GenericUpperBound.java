@@ -1,4 +1,4 @@
-package Bounding;
+package bounding;
 
 //parametre olarak aldigimiz data tipini sinirlandirabiliriz.
 //bu class da sadece Number'in alt siniflarini kullansin
@@ -37,7 +37,3 @@ public class GenericUpperBound<T extends Number> {
         //   GenericUpperBound<String> obj3=new GenericUpperBound<>(strArr);-->CTE data tipini number ile sınırlandırdık.
     }
 }
-
-
-//public interface IEntityRepository<TEntity> where TEntity : class, IEntity, new()
-// public class EfEntityRepositoryBase<TEntity> : IEntityRepository<TEntity> where TEntity : class, IEntity, new()

@@ -1,4 +1,4 @@
-package Generics.classes;
+package generics.classes;
 
 public class RunnerNonGeneric {
 

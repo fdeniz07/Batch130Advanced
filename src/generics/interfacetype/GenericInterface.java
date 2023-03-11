@@ -1,4 +1,4 @@
-package Generics.interfacetype;
+package generics.interfacetype;
 
 //example: repository--->customer,user,account
 public interface GenericInterface<T> {

@@ -1,4 +1,4 @@
-package Generics.interfacetype;
+package generics.interfacetype;
 
 //ÖNEMLI!!!!: Generics primitive data tipi ile calismaz. Sadece NonPrimitive kullanilir
 public class GenericInterfaceStringImpl implements GenericInterface<String> {

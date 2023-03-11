@@ -1,4 +1,4 @@
-package Generics.interfacetype.example;
+package generics.interfacetype.example;
 
 public class CustomerRepo implements Repository<Customer>{
     @Override
