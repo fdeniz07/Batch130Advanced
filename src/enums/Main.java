@@ -4,6 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("========================== VARIABLES ==============================");
+
         useNonEnumVariable(1);
         useNonEnumVariable(2);
         useNonEnumVariable(3);
@@ -11,16 +13,34 @@ public class Main {
         useNonEnumVariable(5);
         useNonEnumVariable(100); //CTE,
 
+        System.out.println("========================== ENUMS ==============================");
         useEnumType(TransactionTypeEnum.DEPOSIT);
+        System.out.println("========================================================");
         useEnumType(TransactionTypeEnum.WITHDRAW);
+        System.out.println("========================================================");
         useEnumType(TransactionTypeEnum.PAYMENT);
+        System.out.println("========================================================");
         useEnumType(TransactionTypeEnum.TRANSFER);
+        System.out.println("========================================================");
         useEnumType(TransactionTypeEnum.OTHER);
         //useEnumType(aaaaa); //enum type disinda deger girilemez CTE
 
     }
 
     public static void useNonEnumVariable(int n) {
+
+        //        if(transactionType.getCode()==10){
+//            System.out.println("Para yatırılıyor...");
+//        }
+
+        //ordinal kullanmanın riski? güncellemede sıra değişebilir.
+
+//         if(transactionType.ordinal()==0){
+//             System.out.println("Para yatırılıyor...");
+//         }
+
+
+
         if (n == TransactionTypeConstant.DEPOSIT) {
             System.out.println("Para yatırılıyor...");
         } else if (n == TransactionTypeConstant.WITHDRAW) {
@@ -34,6 +54,8 @@ public class Main {
         }
     }
 
+
+
     public static void useEnumType(TransactionTypeEnum transactionType) {
         if (transactionType == TransactionTypeEnum.DEPOSIT) {
             System.out.println("Para yatırılıyor...");
@@ -46,6 +68,9 @@ public class Main {
         } else if (transactionType == TransactionTypeEnum.OTHER) {
             System.out.println("Diğer işlemler...");
         }
+
+        System.out.println("Enum name:"+transactionType.name());
+        System.out.println("Enum sirasi:"+transactionType.ordinal());
     }
 
 
