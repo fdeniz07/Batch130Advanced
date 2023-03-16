@@ -1,4 +1,4 @@
-package Threads;
+package threads;
 /*
 Bir öğrencinin banka hesabı için para yatırma(deposit) ve çekme işlemleri(withdraw) için uygulama
 Hesapta para yoksa para yatırılması(bakiyenin artması) beklensin.
