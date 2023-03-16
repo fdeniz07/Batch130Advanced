@@ -1,4 +1,4 @@
-package Threads;
+package threads;
 
 public class WaitInterrupt {
 
